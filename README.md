@@ -1,17 +1,28 @@
-# Watcher of Friends Online
+# Кто онлайн в вконтакте
 
-[TODO. There will be project description]
+Скрипт выводит список друзей пользователя, находящихся онлайн на сайте [ВКонтакте](https://vk.com)
 
-# How to Install
+# Как запустить
 
-Python 3 should be already installed. Then use pip (or pip3 if there is a conflict with old Python 2 setup) to install dependencies:
+Скрипт требует для своей работы установленного интерпретатора Python версии 3.5
+
+Запуск на Linux:
 
 ```bash
 pip install -r requirements.txt # alternatively try pip3
 ```
+$ python3.5 vk_friends_online.py
+Login: my_login_vk
+Password: my_password_vk
 
-Remember, it is recommended to use [virtualenv/venv](https://devman.org/encyclopedia/pip/pip_virtualenv/) for better isolation.
+Василий Васильев
+Иван Иванов
+Никита Никтин
+Андрей Андреев
 
-# Project Goals
 
-The code is written for educational purposes. Training course for web-developers - [DEVMAN.org](https://devman.org)
+Рекомендуется использовать виртуальное окружение [virtualenv/venv](https://devman.org/encyclopedia/pip/pip_virtualenv/).
+
+# Цели проекта
+
+Код создан в учебных целях. В рамках учебного курса по веб-разработке - [DEVMAN.org](https://devman.org)
