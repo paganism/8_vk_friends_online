@@ -2,6 +2,7 @@ import vk
 import getpass
 
 APP_ID = 6427265
+VK_API_VERSION = 5.73
 
 
 def get_user_login():
@@ -19,19 +20,20 @@ def create_vk_session(login, password):
         app_id=APP_ID,
         user_login=login,
         user_password=password,
-        scope='friends, users',
+        scope='friends',
     )
     vk_api = vk.API(session)
     return vk_api
 
 
 def get_friends_online(vk_session):
-    friends_online = vk_session.friends.getOnline(v=5.7)
-    return friends_online
+    friends_online_ids = vk_session.friends.getOnline(v=VK_API_VERSION)
+    return friends_online_ids
 
 
-def get_friends_online_info(friends_online, vk_session):
-    friends_online_info = vk_session.users.get(user_ids=friends_online, v=5.7)
+def get_friends_online_info(friends_online_ids, vk_session):
+    friends_online_info = vk_session.users.get(
+        user_ids=friends_online_ids, v=VK_API_VERSION)
     return friends_online_info
 
 

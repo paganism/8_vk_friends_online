@@ -10,7 +10,7 @@
 
 ```bash
 pip install -r requirements.txt # alternatively try pip3
-```
+
 $ python3.5 vk_friends_online.py
 Login: my_login_vk
 Password: my_password_vk
@@ -19,7 +19,7 @@ Password: my_password_vk
 Иван Иванов
 Никита Никтин
 Андрей Андреев
-
+```
 
 Рекомендуется использовать виртуальное окружение [virtualenv/venv](https://devman.org/encyclopedia/pip/pip_virtualenv/).
 
